@@ -1,0 +1,27 @@
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + .custom {
+  cursor: pointer;
+  height: 75px;
+  width: 75px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+/* CHECKED STYLES */
+[type=radio]:checked + .custom {
+  border-bottom: 10px solid #f8f9fa ;
+}
+
+img{
+  width: 100%;
+}
+.radio{
+  display: flex;
+}

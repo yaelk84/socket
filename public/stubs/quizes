@@ -1,0 +1,47 @@
+{
+  "Games": [
+    {
+      "name": "age",
+      "id": 0,
+      "host": "",
+      "gameData": {
+        "Questions": [
+          {
+            "id": 0,
+            "question": "what is your age",
+            "answers": ["A","B","C","D"],
+            "correctAnswer": "B"
+          }
+        ]
+      }
+    },
+    {
+      "name": "gender",
+      "id": 2,
+      "host": "",
+      "gameData": {
+        "Questions": [
+          {
+            "id": 0,
+            "question": "what is your gender",
+            "answers": ["F","M"],
+            "correctAnswer": "A"
+          },
+          {
+            "id": 1,
+            "question": "what is your gender1",
+            "answers": ["F","M"],
+            "correctAnswer": "B"
+          },
+          {
+            "id": 3,
+            "question": "what is your gender3",
+            "answers": ["F","M"],
+            "correctAnswer": "B"
+          }
+        ]
+      }
+    }
+
+  ]
+}

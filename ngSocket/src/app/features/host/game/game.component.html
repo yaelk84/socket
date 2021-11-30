@@ -1,0 +1,41 @@
+<div class="outer  d-flex justify-content-center flex-column align-items-center">
+<div class="inner">
+  <ng-container *ngIf="state === stateEnum.AllGame">
+    <div *ngIf="games && games.length">
+      <button class="btn-primary btn" *ngFor="let game of games" (click)="chooseGame(game.id)" >
+        {{game.name}}
+      </button>
+    </div>
+
+  </ng-container>
+  <ng-container *ngIf="state === stateEnum.ChosenGame">
+    <div class="d-flex justify-content-center align-items-center flex-column">
+      <h2>the pin is: {{pin}}</h2>
+      <button class="btn-secondary btn-lg" (click)="startGame()">start</button></div>
+
+  </ng-container>
+
+
+
+  <ng-container *ngIf="state === stateEnum.Question">
+    <app-questions [data]="questionData" [time]="time"></app-questions>
+  </ng-container>
+  <ng-container *ngIf="state === stateEnum.Next">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+    <button class="btn-secondary btn-lg" (click)="next()"> next</button>
+    </div>
+  </ng-container>
+
+</div>
+  <ng-container *ngIf="playerData && playerData.length">
+    <div class="players-wrap">
+      <app-players [players]="playerData"></app-players>
+    </div>
+
+  </ng-container>
+</div>
+
+
+
+<app-radiooo></app-radiooo>
+

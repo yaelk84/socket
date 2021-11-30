@@ -1,0 +1,13 @@
+
+<div *ngIf="socket">
+  <div *ngIf="!aftelogin">
+    <app-login [socket]="socket"></app-login>
+  </div>
+
+  <div *ngIf="aftelogin">
+<app-players-display [players]="players"></app-players-display>
+  </div>
+
+</div>
+
+

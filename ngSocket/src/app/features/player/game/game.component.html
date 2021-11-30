@@ -1,0 +1,14 @@
+<ng-container *ngIf="showAnswers else isCorect" >
+  <div class="d-flex">
+    <button class="btn btn-outline-primary" (click)="answer('A')">A</button>
+    <button class="btn btn-outline-primary " (click)="answer('B')">B</button>
+    <button class="btn btn-outline-primary" (click)="answer('C')">C</button>
+    <button class="btn btn-outline-primary " (click)="answer('D')">D</button>
+  </div>
+
+</ng-container>
+<ng-template #isCorect>
+  <div>
+    {{correct ? 'yess' : 'no'}}
+  </div>
+</ng-template>

@@ -1,0 +1,17 @@
+.outer{
+  background-color: #2c3034;
+  height: 100vh;
+  .box{
+    background-color: white;
+    border-radius: 5px;
+    width: 470px;
+    padding: 50px;
+    .inputs{
+      margin-top: 20px;
+      input{margin-bottom: 25px;
+        background-color: #f9fafb;
+        min-height: 40px}
+    }
+
+  }
+}
